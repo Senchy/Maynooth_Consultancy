@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
+<style type="text/css">
+body {
+	background:url(Backround.jpg) #A98436 no-repeat left top;
+	background-size: 100%;
 }
-</script>
+p {
+    color: red;
+    text-align: center;
+}
+h1 {
+    color: orange;
+    text-align: center;
+}
+button {
+  	border-top:			2px solid #a3ceda;
+	border-left:		2px solid #a3ceda;
+	border-right:		2px solid #4f6267;
+	border-bottom:		2px solid #4f6267;
+	padding:			10px 20px !important;
+	font-size:			14px !important;
+	background-color:	#c4f1fe;
+	font-weight:		bold;
+	background: 		#fff000;
+	color:				green;
+}
+.fsSubmitButton
+{
+	background-image: 	url(signup.png);
+	background-repeat:	no-repeat;
+	background-color:	transparent;
+	height:			66px;
+	width:			182px;
+	border:			none;
+	text-indent:		-999em;
+}
+</style>
 </head>
-
-<body background="Backround.jpg">
 
 <h1>My Web Page</h1>
 
 <p id="demo">A Paragraph</p>
 
 <button type="button" onclick="myFunction()">Try it</button>
+<fsSubmitButton type = "button" onclick = "myFunction()">ayay</fsSubmitButton>
 
 </body>
 </html>
