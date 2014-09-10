@@ -22,9 +22,14 @@
             min-height:         100%;
         }
         .container {
-            position:absolute;
-            top:                0px;
-            left:               0px;
+            display: block;
+            position: fixed; 
+            top: 30px; 
+            left: 50%; 
+            margin-left:-450px; 
+            width:900px; 
+            min-width: 900px; 
+            height: 1000px;
             border:             1px solid gray;
             background-color:   #d0f0f6;
         }
@@ -55,7 +60,7 @@
     </style>
 </head>
 <body onscroll = "ScrollPage()" style = "overflow: auto;">
-<div id = "container" class="container" style = " display: block; position: fixed; top: 30px; left: 50%; margin-left:-450px; width:900px; min-width: 900px; min-height: 1000px;">
+<div id = "container" class="container" style = " ">
     <div class="Main_Title" style = "background: #000000; min-height: 70px">
         <p style = "text-align: right; color: white; background-color: green; float: right">Call Us : 01-6291111</mark></p>
         <h1 style = " text-align: left; font-size: 48px !important; color: orange; margin : 0px">Maynooth Marketing & Consultancy</h1>
@@ -69,7 +74,7 @@
     <div id = "PageContent" name = "PageContent" class= "Page_Content"> 
         <script type="text/javascript" src="Scripts/PageContent.js"></script>
     </div>  
-    <div id = "PageBottom" name = "PageBottom" class= "Page_Bottom" style = "background: #000000; min-height: 300px; margin-top:100px;">
+    <div id = "PageBottom" name = "PageBottom" class= "Page_Bottom" style = "background: #000000; position:absolute; top: 800px; width:900px;">
         <div name = "miniaboutus" id = "miniaboutus" style = "float: left; margin : 20px; margin-top : 0px;">
             <h1 style = "text-align: center; font-size: 40px !important; color: red;">About Us</h1>
             <p style = "font-size: 20px !important; color: white;"> bla bla bla</p>
@@ -82,15 +87,5 @@
         </div>
     </div> 
 </div>
-<script type="text/javascript">
-    function ScrollPage()
-    {
-        var obj = document.getElementById("container");
-        var scrollpos = document.body.scrollTop / document.body.clientHeight;
-        
-        var x = -(scrollpos * 600) + 20;
-        obj.style.top = x+"px";
-    }
-</script>
 </body>
 </html>
