@@ -1,19 +1,14 @@
 
 var image1 = new Image();
-//image1.src = "Images/SlideShow1.jpg";
-image1.src = "Images/ss1.jpg";
+image1.src = "Images/SlideShow1.jpg";
 var image2 = new Image();
-//image2.src = "Images/SlideShow2.jpg";
-image2.src = "Images/ss2.jpg";
+image2.src = "Images/SlideShow2.jpg";
 var image3 = new Image();
-//image3.src = "Images/SlideShow3.jpg";
-image3.src = "Images/ss3.jpg";
+image3.src = "Images/SlideShow3.jpg";
 var image4 = new Image();
-//image4.src = "Images/SlideShow4.jpg";
-image4.src = "Images/ss4.jpg";
+image4.src = "Images/SlideShow4.jpg";
 var image5 = new Image();
-//image5.src = "Images/SlideShow5.jpg";
-image5.src = "Images/ss5.jpg";
+image5.src = "Images/SlideShow5.jpg";
 var step=1;
 var page=1;
 var scrolllength = 400;
